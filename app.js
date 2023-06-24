@@ -8,9 +8,9 @@ const port = process.env.PORT || 3000
 app.use(express.static('public'));
 
 AWS.config.update({
-  accessKeyId: process.env.accessKey || 'AKIA6FPTTHPDYQBWUJLO',
-  secretAccessKey: process.env.secretAccess || '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',
-  region: process.env.region || 'us-east-2'
+  accessKeyId: process.env.accessKey,
+  secretAccessKey: process.env.secretAccess,
+  region: process.env.region
 });
 
 const storage = multer.diskStorage({
