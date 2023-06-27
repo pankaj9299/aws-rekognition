@@ -82,6 +82,6 @@ app.post('/upload', upload.single('image'), (req, res) => {
 });
 
 // Start the server
-app.listen(port, () => {
+app.listen(port, "0.0.0.0", function() {
   console.log('Server is running on port: ' + port);
 });
